@@ -3,19 +3,20 @@
   padding:0;
   text-align:center;
   font-style: italic;
+  background-color: #ffd6ad;
 }
 
 h1 {
-  background-color: #f8c491;
   height:5rem;
   line-height:5rem;
   color:black;
   border-radius:.4rem;
   display:inline-table;
-  border:0.1rem #663399 solid;
   margin-top:2rem;
   padding:0.1em 0.4em;
-  color:#663399;
+  color:#663399;  
+  font-size:3.5rem;
+
 }
 .choices {
   display:flex;
@@ -70,4 +71,48 @@ button:hover {
   padding:1rem;
   border-radius:1rem;
  
+}
+ 
+@media (300px <= width <= 700px) {
+  h1 {
+    font-size:2rem;
+  }
+  .choices {
+   width:100vw;
+  }
+  .choice {
+    width:30vmin;
+    height:30vmin;
+    border-radius:50%;
+    margin-top:4rem;
+  }
+  button{
+    width:30vmin;
+    height:30vmin;
+    font-size:12vmin;
+  }
+  .msg-container {
+    height:20vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #msg {
+    font-size:1.5rem;
+    border-radius:2rem;
+    margin:0 0.5rem;
+    margin-top:1rem;
+  }
+  .score-board {
+    font-size: 2.1rem;
+    margin-top:5rem;
+    gap:5rem;
+  }
+  
+  #user-score,#comp-score {
+    font-size:2rem;
+  }
+  body{
+    margin-top:2rem;
+  }
 }
